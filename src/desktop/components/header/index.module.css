@@ -1,0 +1,40 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 48px;
+  height: 80px;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scrolled {
+  background-color: #d5d5d569;
+  margin-top: 20px;
+}
+
+.navList {
+  display: flex;
+  gap: 32px;
+  padding: 30px;
+  list-style: none;
+  border-radius: 30px;
+}
+
+.link {
+  text-decoration: none;
+  color: #111111;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.link:hover {
+  background-color: #f2f2f2;
+  color: #111111;
+}

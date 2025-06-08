@@ -1,13 +1,18 @@
-import { AbsoluteCenter, Box, Center } from "@chakra-ui/react";
+import { Header } from "./components/header";
+import { Center, Text } from "@chakra-ui/react";
+
+import styles from "./index.module.css";
 
 export const Desktop = () => {
   return (
-    <Center position="relative" h="100px">
-      <AbsoluteCenter bg="tomato" p="4" color="white" axis="vertical">
-        <Box bg="Menu" w="300px" h="100px">
-          This will be centered
-        </Box>
-      </AbsoluteCenter>
-    </Center>
+    <>
+      <Header />
+      <Center>
+        <Text textStyle="7xl">Профориентация</Text>
+      </Center>
+      <div className={styles.div} />
+      <div className={styles.div} />
+      <div className={styles.div} />
+    </>
   );
 };
